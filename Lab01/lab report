@@ -1,0 +1,120 @@
+# 🧪 Lab-01
+
+## Title: Deploying a Web Server on Cloud Infrastructure
+
+## Objectives
+1. Sign in to AWS Console using the sandbox environment  
+2. Create and configure an EC2 virtual machine  
+3. Connect to the instance and set up Nginx  
+4. Upload and serve a sample webpage  
+5. Verify the hosted page through a browser  
+
+---
+
+## Background / Theory
+
+### 1. Cloud Computing in IoT
+Cloud platforms provide the backbone for IoT systems by offering remote storage, computation, and management. Since IoT devices generate massive data streams, the cloud ensures scalability, security, and real-time analytics.
+
+Key roles:
+- Centralized data storage and processing  
+- Remote monitoring of devices  
+- Elastic scaling for large deployments  
+- Backup and security features  
+- Real-time insights and dashboards  
+
+### 2. AWS EC2 (Elastic Compute Cloud)
+Amazon EC2 delivers resizable virtual servers in the cloud. It allows developers to run applications and services without physical hardware.
+
+Highlights:
+- On-demand virtual machines  
+- Flexible scaling options  
+- Pay-per-use pricing model  
+- Reliable and secure infrastructure  
+- Supports multiple operating systems  
+
+Common uses:
+- Hosting websites  
+- Running IoT backends  
+- Deploying applications  
+
+### 3. Nginx Web Server
+Nginx is a lightweight, high-performance web server widely used for hosting websites and managing traffic.
+
+Features:
+- Fast and efficient request handling  
+- Load balancing capabilities  
+- Reverse proxy support  
+- Low resource consumption  
+- SSL/TLS security support  
+
+Applications:
+- Serving static and dynamic websites  
+- Handling API traffic  
+- Hosting IoT dashboards  
+- Distributing traffic across servers  
+
+---
+
+## Procedure
+
+**Step 1: Access AWS Console**  
+- Open the AWS sandbox environment  
+- Log in to the AWS Management Console  
+
+**Step 2: Launch EC2 Instance**  
+- Go to EC2 Dashboard → Launch Instance  
+- Select Ubuntu Linux AMI  
+- Choose instance type (e.g., t2.micro)  
+- Create/select key pair  
+- Configure security group:  
+  - Allow SSH (Port 22)  
+  - Allow HTTP (Port 80)  
+- Launch instance  
+
+**Step 3: Connect to Instance**  
+```bash
+ssh -i key.pem ubuntu@<public-ip>
+Step 4: Install Nginx
+
+bash
+sudo apt update
+sudo apt install nginx -y
+sudo systemctl start nginx
+sudo systemctl enable nginx
+Step 5: Deploy Sample Web Page
+
+bash
+sudo nano /var/www/html/index.html
+Insert:
+
+html
+<html>
+<head>
+<title>Cloud Web Server</title>
+</head>
+<body>
+<h1>Welcome to Nginx on AWS EC2</h1>
+</body>
+</html>
+Save and exit.
+
+Step 6: Access Web Page
+
+Copy EC2 public IP
+
+Open browser → http://<public-ip>
+
+Sample page should load successfully
+
+Output
+EC2 instance created and running
+
+Nginx installed and active
+
+Sample HTML page deployed
+
+Web page accessible via browser
+
+Conclusion
+This lab demonstrated how to host a web server on AWS EC2 using Nginx. The exercise showed the role of cloud computing in scalable application hosting. By deploying a sample webpage, we gained practical experience in cloud infrastructure setup, server configuration, and basic deployment techniques relevant to IoT and modern web systems.
