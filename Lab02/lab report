@@ -1,1 +1,125 @@
+🌍 Lab Report: Earthquake Magnitude Monitoring API
 
+## 1. Objective
+The purpose of this lab is to design a RESTful API that records and monitors earthquake magnitudes. The system helps track seismic activity, provide alerts, and store historical data for analysis.
+
+---
+
+## 2. Tools & Technologies
+- **Python 3.x**
+- **FastAPI** (web framework)
+- **TinyDB** (JSON-based NoSQL database)
+- **Datetime** module (timestamp handling)
+- **Uvicorn** (ASGI server)
+
+---
+
+## 3. Code Implementation
+
+```python
+from fastapi import FastAPI
+from tinydb import TinyDB
+from datetime import datetime
+
+app = FastAPI()
+db = TinyDB("quake_db.json")
+
+@app.get("/")
+def home():
+    return {"message": "Earthquake API Running"}
+
+@app.post("/quake")
+def add_quake(magnitude: float, location: str):
+    """
+    magnitude: earthquake magnitude (Richter scale)
+    location: affected area
+    """
+    severity = "Minor"
+    if magnitude >= 5.0 and magnitude < 7.0:
+        severity = "Moderate"
+    elif magnitude >= 7.0:
+        severity = "Severe"
+
+    data = {
+        "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "magnitude": magnitude,
+        "location": location,
+        "severity": severity
+    }
+    db.insert(data)
+    return {"status": "saved", "data": data}
+
+@app.get("/quake")
+def get_quakes():
+    return db.all()
+4. Procedure
+Install dependencies
+
+bash
+pip install fastapi uvicorn tinydb
+Create project file  
+Save the above code in a file named main.py.
+
+Run the server
+
+bash
+uvicorn main:app --reload
+Test endpoints
+
+Root: http://127.0.0.1:8000/
+
+POST earthquake record:
+http://127.0.0.1:8000/quake?magnitude=4.5&location=Kathmandu
+
+GET earthquake records:
+http://127.0.0.1:8000/quake
+
+Observe results
+
+Data is stored in quake_db.json.
+
+Severity messages indicate Minor, Moderate, or Severe earthquakes.
+
+5. Example Responses
+Root Endpoint
+json
+{"message": "Earthquake API Running"}
+POST /quake
+json
+{
+  "status": "saved",
+  "data": {
+    "timestamp": "2026-05-28 16:15:00",
+    "magnitude": 6.2,
+    "location": "Kathmandu",
+    "severity": "Moderate"
+  }
+}
+GET /quake
+json
+[
+  {
+    "timestamp": "2026-05-28 16:15:00",
+    "magnitude": 6.2,
+    "location": "Kathmandu",
+    "severity": "Moderate"
+  }
+]
+6. Results
+API successfully stores and retrieves earthquake magnitude records.
+
+System categorizes severity based on magnitude.
+
+Data persists in quake_db.json.
+
+7. Applications
+Seismic activity monitoring.
+
+Disaster preparedness and alerts.
+
+Historical earthquake data analysis.
+
+Integration with IoT sensors and dashboards.
+
+8. Conclusion
+This lab demonstrates how to build an earthquake monitoring API using FastAPI and TinyDB. The system is lightweight, scalable, and can be extended with real-time seismic sensors or dashboards for visualization and early warning systems.
