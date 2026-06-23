@@ -1,4 +1,4 @@
-🌍 Lab Report: Earthquake Magnitude Monitoring API
+ Lab Report: Earthquake Magnitude Monitoring API
 
 ## 1. Objective
 The purpose of this lab is to design a RESTful API that records and monitors earthquake magnitudes. The system helps track seismic activity, provide alerts, and store historical data for analysis.
@@ -122,4 +122,6 @@ Historical earthquake data analysis.
 Integration with IoT sensors and dashboards.
 
 8. Conclusion
-This lab demonstrates how to build an earthquake monitoring API using FastAPI and TinyDB. The system is lightweight, scalable, and can be extended with real-time seismic sensors or dashboards for visualization and early warning systems.
+This lab demonstrates how to build an earthquake monitoring API using FastAPI and TinyDB.
+The system is lightweight, scalable, and can be extended with real-time seismic sensors or 
+dashboards for visualization and early warning systems.
