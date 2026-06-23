@@ -7,5 +7,5 @@
 | Lab#   | Title                                                                | Date       | Remarks |
 |------  |--------------------------  |------------|---------|
 | 1      |   Deploying a Web Server on Cloud Infrastructure                      | 2026/06/10 |To Deploy a Web Server on Cloud Infrastructure       |
-| 2      |  Earthquake Magnitude Monitoring API                                  |2026/06/14|   Earthquake Magnitude Monitoring API                       |
+| 2      |  Earthquake Magnitude Monitoring API                                  |2026/06/14|   Earthquake Magnitude Monitoring API                      |
                                                                                           
