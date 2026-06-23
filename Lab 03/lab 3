@@ -177,4 +177,6 @@ Historical data plotted using Chart.js line chart
 Public access enabled through EC2 instance
 
 Conclusion
-This lab demonstrated the development and deployment of an IoT dashboard on AWS EC2. FastAPI was used for backend services, while Chart.js provided visualization. Real‑time and historical sensor data were displayed interactively, underscoring the importance of visualization in IoT monitoring and trend analysis.
+This lab demonstrated the development and deployment of an IoT dashboard on AWS EC2.
+FastAPI was used for backend services, while Chart.js provided visualization. 
+Real‑time and historical sensor data were displayed interactively, underscoring the importance of visualization in IoT monitoring and trend analysis.
