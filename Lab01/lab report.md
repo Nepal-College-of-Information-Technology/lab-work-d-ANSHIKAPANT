@@ -78,7 +78,7 @@ Paste:
 </body>
 # Output
 
-![alt text](<Screenshot 2026-07-07 145301.png>)
+![alt text](Screenshot%202026-07-07%20145301.png)
 **Figure 1:** Successfully hosted webpage running on the AWS EC2 instance using the Nginx web server.
 
 ---
@@ -86,7 +86,6 @@ Paste:
 
 
 ---
->>>>>>> 5644b99 (Save workspace changes)
 
 ![Web Page Output](Screenshot%202026-05-28%20161428.png)
 **Figure 2:** 
