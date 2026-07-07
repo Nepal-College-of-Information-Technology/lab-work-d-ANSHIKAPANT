@@ -182,17 +182,25 @@ Example:
 
 ### Screenshot Gallery
 
-- Package installation
-  ![Package installation screenshot](Screenshot%202026-07-07%20181757.png)
+<div align="center">
+  <p><strong>1. Package Installation</strong></p>
+  <img src="Screenshot%202026-07-07%20181757.png" alt="Package installation screenshot" width="700" />
+</div>
 
-- VS Code source code
-  ![VS Code source code screenshot](Screenshot%202026-07-07%20183447.png)
+<div align="center">
+  <p><strong>2. VS Code Source Code</strong></p>
+  <img src="Screenshot%202026-07-07%20183447.png" alt="VS Code source code screenshot" width="700" />
+</div>
 
-- Server running
-  ![Terminal showing server running](Screenshot%202026-07-07%20183510.png)
+<div align="center">
+  <p><strong>3. Server Running</strong></p>
+  <img src="Screenshot%202026-07-07%20183510.png" alt="Terminal showing server running" width="700" />
+</div>
 
-- Swagger UI and database output
-  ![Swagger UI and database screenshot](Screenshot%202026-07-07%20183517.png)
+<div align="center">
+  <p><strong>4. Swagger UI and Database Output</strong></p>
+  <img src="Screenshot%202026-07-07%20183517.png" alt="Swagger UI and database screenshot" width="700" />
+</div>
 
 ___________________________________________________________________________________________________________________________________________________________________________
 
