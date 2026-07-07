@@ -212,7 +212,6 @@ All data is permanently stored in quake_db.json.
 Swagger UI enables easy API testing and documentation.
 
 ____________________________________________________________________________________________________________________________________________________________________________________
-
 8. Applications
 Earthquake monitoring systems
 Disaster management and emergency response
@@ -240,4 +239,3 @@ earthquake magnitude, location, timestamp, and severity while storing the inform
 The API was successfully tested using GET and POST requests, confirming correct functionality. 
 This project illustrates how lightweight REST APIs can be developed for real-time monitoring 
 applications and can be further extended by integrating cloud services, IoT seismic sensors, GIS mapping, and real-time alert systems.
-
