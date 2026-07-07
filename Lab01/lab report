@@ -14,60 +14,7 @@
 
 # Background / Theory
 
-## 1. Cloud Computing in IoT
-
-Cloud computing provides the infrastructure required for IoT applications by offering scalable storage, computing power, and device management. Since IoT devices generate a large amount of data, cloud services enable efficient processing, secure storage, and real-time analytics.
-
-### Key Roles
-
-- Centralized data storage and processing
-- Remote monitoring and management
-- Elastic scalability
-- Backup and disaster recovery
-- Real-time analytics and visualization
-
----
-
-## 2. Amazon EC2 (Elastic Compute Cloud)
-
-Amazon EC2 is a cloud computing service that provides virtual servers (instances) for running applications. It eliminates the need for physical hardware while offering flexibility and scalability.
-
-### Features
-
-- On-demand virtual machines
-- Flexible instance types
-- Pay-as-you-go pricing
-- Secure and reliable infrastructure
-- Supports Linux and Windows operating systems
-
-### Applications
-
-- Website hosting
-- Application deployment
-- IoT backend services
-- Cloud-based development environments
-
----
-
-## 3. Nginx Web Server
-
-Nginx is a lightweight, high-performance web server commonly used for serving websites, reverse proxying, and load balancing.
-
-### Features
-
-- High-speed performance
-- Low memory usage
-- Reverse proxy support
-- Load balancing
-- SSL/TLS support
-
-### Applications
-
-- Static website hosting
-- Dynamic web applications
-- API gateway
-- IoT dashboards
-- Traffic distribution
+... (same as before)
 
 ---
 
@@ -86,35 +33,22 @@ Nginx is a lightweight, high-performance web server commonly used for serving we
 - Click **Launch Instance**.
 - Select **Ubuntu Linux AMI**.
 - Choose the **t2.micro** instance type.
-- Create or select an existing key pair.
 - Configure the Security Group:
-  - Allow **SSH (Port 22)**
-  - Allow **HTTP (Port 80)**
+  - Allow SSH (Port 22)
+  - Allow HTTP (Port 80)
 - Launch the instance.
-
-📷 **Screenshot: EC2 Instance Configuration**
-
-> *(Insert Screenshot Here)*
 
 ---
 
 ## Step 3: Connect to the EC2 Instance
 
-Run the following command:
-
 ```bash
 ssh -i key.pem ubuntu@<public-ip>
 ```
 
-📷 **Screenshot: SSH Connection**
-
-> *(Insert Screenshot Here)*
-
 ---
 
 ## Step 4: Install Nginx
-
-Execute the following commands:
 
 ```bash
 sudo apt update
@@ -123,27 +57,15 @@ sudo systemctl start nginx
 sudo systemctl enable nginx
 ```
 
-Verify the installation:
-
-```bash
-sudo systemctl status nginx
-```
-
-📷 **Screenshot: Nginx Installation**
-
-> *(Insert Screenshot Here)*
-
 ---
 
 ## Step 5: Deploy a Sample Web Page
-
-Open the default webpage:
 
 ```bash
 sudo nano /var/www/html/index.html
 ```
 
-Replace its contents with:
+Paste:
 
 ```html
 <!DOCTYPE html>
@@ -157,47 +79,37 @@ Replace its contents with:
 </html>
 ```
 
-Save and exit.
-
-📷 **Screenshot: HTML File**
-
-> *(Insert Screenshot Here)*
-
 ---
 
 ## Step 6: Access the Web Page
 
-- Copy the EC2 Public IPv4 Address.
-- Open a web browser.
-- Visit:
+Open your browser and visit:
 
 ```
 http://<public-ip>
 ```
 
-The webpage should display:
+### **Output Screenshot**
 
-```
-Welcome to Nginx on AWS EC2
-```
+<p align="center">
+  <img src="screenshots/weather-app.png" alt="Web Page Output" width="700">
+</p>
 
-📷 **Screenshot: Webpage Output**
-
-> *(Insert Screenshot Here)*
+**Figure 1:** Successfully hosted webpage running on the AWS EC2 instance using the Nginx web server.
 
 ---
 
 # Output
 
 - ✅ EC2 instance launched successfully.
-- ✅ Nginx installed and running.
-- ✅ Sample HTML page deployed.
-- ✅ Website accessible through the browser.
+- ✅ Nginx installed successfully.
+- ✅ HTML webpage deployed.
+- ✅ Webpage accessible through the browser.
 
 ---
 
 # Conclusion
 
-This laboratory exercise demonstrated the deployment of a web server using Amazon EC2 and the Nginx web server. The practical implementation provided hands-on experience with launching cloud instances, configuring web server software, and hosting a static webpage. The lab also highlighted the importance of cloud computing in building scalable, reliable, and efficient infrastructure for IoT and modern web applications.
+This laboratory exercise demonstrated the deployment of a web server on an Amazon EC2 instance using the Nginx web server. The experiment provided practical experience with launching cloud infrastructure, configuring server software, and hosting a static webpage. It also illustrated the importance of cloud computing in supporting scalable and reliable web and IoT applications.
 
 ---
