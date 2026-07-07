@@ -89,9 +89,9 @@ Open your browser and visit:
 http://<public-ip>
 ```
 
-### **Output Screenshot**
 
-![Web Page Output](Screenshot%202026-05-28%20161428.png)
+
+
 **Figure 1:** Successfully hosted webpage running on the AWS EC2 instance using the Nginx web server.
 
 ---
