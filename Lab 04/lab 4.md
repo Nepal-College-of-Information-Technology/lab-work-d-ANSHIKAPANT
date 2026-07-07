@@ -126,28 +126,28 @@ IoT sensors operate by detecting physical changes and converting them into elect
 The uploaded image shows a broad overview of 15 different IoT sensor types used in modern applications.
 
 <div align="center">
-  <p><strong>1. Sensor Overview</strong></p>
+  <p><strong>1. Fifteen Sensor Types Overview</strong></p>
+  <img src="Screenshot%202026-07-07%20185841.png" alt="Fifteen sensor types overview" width="700" />
+</div>
+
+<div align="center">
+  <p><strong>2. Sensor Overview</strong></p>
   <img src="Screenshot%202026-07-07%20185526.png" alt="IoT sensor overview" width="700" />
 </div>
 
 <div align="center">
-  <p><strong>2. Sensor Module</strong></p>
+  <p><strong>3. Sensor Module</strong></p>
   <img src="Screenshot%202026-07-07%20185710.png" alt="Sensor module screenshot" width="700" />
 </div>
 
 <div align="center">
-  <p><strong>3. Experimental Setup</strong></p>
+  <p><strong>4. Experimental Setup</strong></p>
   <img src="Screenshot%202026-07-07%20185744.png" alt="Experimental setup screenshot" width="700" />
 </div>
 
 <div align="center">
-  <p><strong>4. Observation Output</strong></p>
+  <p><strong>5. Observation Output</strong></p>
   <img src="Screenshot%202026-07-07%20185817.png" alt="Observation output screenshot" width="700" />
-</div>
-
-<div align="center">
-  <p><strong>5. Additional Observation</strong></p>
-  <img src="Screenshot%202026-07-07%20185841.png" alt="Additional observation screenshot" width="700" />
 </div>
 
 <div align="center">
@@ -158,11 +158,6 @@ The uploaded image shows a broad overview of 15 different IoT sensor types used 
 <div align="center">
   <p><strong>7. Final Result</strong></p>
   <img src="Screenshot%202026-07-07%20190031.png" alt="Final result screenshot" width="700" />
-</div>
-
-<div align="center">
-  <p><strong>8. Fifteen Sensor Types Illustration</strong></p>
-  <img src="Screenshot%202026-07-07%20185841.png" alt="Fifteen sensor types illustration" width="700" />
 </div>
 
 
