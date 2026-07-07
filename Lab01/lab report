@@ -91,10 +91,7 @@ http://<public-ip>
 
 ### **Output Screenshot**
 
-<p align="center">
-  <img src="screenshots/weather-app.png" alt="Web Page Output" width="700">
-</p>
-
+![Web Page Output](screenshots/Screenshot-2026-05-28-161428.png)
 **Figure 1:** Successfully hosted webpage running on the AWS EC2 instance using the Nginx web server.
 
 ---
