@@ -208,8 +208,14 @@ Capture screenshots of:
 ![Serial Monitor](./Screenshot%202026-07-07%20205952.png)
 *Serial Monitor output showing distance readings from the sensor.*
 
+
+
+
 ![Arduino IDE + Serial Monitor](./Screenshot%202026-07-07%20210005.png)
 *Arduino IDE sketch and Serial Monitor view used during testing.*
+
+
+
 
 ![GitHub Screenshot](./Screenshot%202026-07-07%20210016.png)
 *GitHub screenshot showing the repository/lab work submission.*
