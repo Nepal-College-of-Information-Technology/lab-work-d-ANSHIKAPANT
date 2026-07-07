@@ -1,54 +1,53 @@
-Lab Report: Earthquake Magnitude Monitoring API
-Lab Title:
+# Lab Report: Earthquake Magnitude Monitoring API
+
+## Lab Title
 Developing and Deploying an Earthquake Magnitude Monitoring REST API Using FastAPI and TinyDB
 
-1. Objective
+---
+
+## 1. Objective
 The objectives of this laboratory experiment are:
-To develop a RESTful API using FastAPI.
-To record earthquake magnitude and location information.
-To classify earthquakes based on their magnitude.
-To store earthquake records in a TinyDB database.
-To retrieve stored earthquake records through API endpoints.
-To understand REST API development and cloud-ready applications.
+- To develop a RESTful API using FastAPI.
+- To record earthquake magnitude and location information.
+- To classify earthquakes based on their magnitude.
+- To store earthquake records in a TinyDB database.
+- To retrieve stored earthquake records through API endpoints.
+- To understand REST API development and cloud-ready applications.
 
 ______________________________________________________________________________________________________________________________________________________________________________
 
-2. Theory
-REST API
-REST (Representational State Transfer) is an architectural style used for 
-communication between client and server over HTTP. It enables applications to 
-exchange data efficiently using standard HTTP methods such as GET, POST, PUT, and DELETE.
+## 2. Theory
 
-FastAPI
-FastAPI is a modern, high-performance Python framework used to develop RESTful APIs.
-It provides automatic API documentation through Swagger UI and supports asynchronous programming.
+### REST API
+REST (Representational State Transfer) is an architectural style used for communication between client and server over HTTP. It enables applications to exchange data efficiently using standard HTTP methods such as GET, POST, PUT, and DELETE.
 
-TinyDB
-TinyDB is a lightweight, document-oriented NoSQL database that 
-stores data in JSON format. It is easy to use and suitable fo
-r small applications and prototype development.
+### FastAPI
+FastAPI is a modern, high-performance Python framework used to develop RESTful APIs. It provides automatic API documentation through Swagger UI and supports asynchronous programming.
 
-Earthquake Magnitude Monitoring
-Earthquake monitoring systems collect seismic data to determine 
-the intensity and severity of earthquakes. Based on the Richter Scale:
+### TinyDB
+TinyDB is a lightweight, document-oriented NoSQL database that stores data in JSON format. It is easy to use and suitable for small applications and prototype development.
 
-Minor: Magnitude below 5.0
-Moderate: Magnitude between 5.0 and 6.9
-Severe: Magnitude 7.0 or above
+### Earthquake Magnitude Monitoring
+Earthquake monitoring systems collect seismic data to determine the intensity and severity of earthquakes. Based on the Richter Scale:
+
+- Minor: Magnitude below 5.0
+- Moderate: Magnitude between 5.0 and 6.9
+- Severe: Magnitude 7.0 or above
 
 Such systems help disaster management authorities issue alerts and analyze historical earthquake data.
 
 ____________________________________________________________________________________________________________________________________________________________________________________
 
-3. Tools and Technologies
-Python 3.x
-FastAPI
-TinyDB
-Uvicorn
-Datetime Module
-Visual Studio Code
-Web Browser (Swagger UI)
-4. Source Code
+## 3. Tools and Technologies
+- Python 3.x
+- FastAPI
+- TinyDB
+- Uvicorn
+- Datetime Module
+- Visual Studio Code
+- Web Browser (Swagger UI)
+
+## 4. Source Code
 from fastapi import FastAPI
 from tinydb import TinyDB
 from datetime import datetime
@@ -86,18 +85,19 @@ def add_quake(magnitude: float, location: str):
 @app.get("/quake")
 def get_quakes():
     return db.all()
-5. Procedure
-Step 1: Install Required Packages
+## 5. Procedure
+
+### Step 1: Install Required Packages
 
 Open the terminal and install the required Python packages.
 
 pip install fastapi uvicorn tinydb
 
-Step 2: Create Project File
+### Step 2: Create Project File
 
 Create a file named main.py and paste the above source code into it.
 
-Step 3: Run the API Server
+### Step 3: Run the API Server
 
 Execute the following command:
 
@@ -107,7 +107,7 @@ The server starts at:
 
 http://127.0.0.1:8000
 
-Step 4: Test the API
+### Step 4: Test the API
 Home Endpoint
 GET /
 
@@ -155,7 +155,7 @@ Expected Response
         "severity": "Moderate"
     }
 ]
-Step 5: View Swagger Documentation
+### Step 5: View Swagger Documentation
 
 Open the browser and visit:
 
@@ -163,7 +163,7 @@ http://127.0.0.1:8000/docs
 
 Swagger UI provides interactive API documentation where all endpoints can be tested.
 
-Step 6: Verify Database
+### Step 6: Verify Database
 
 After submitting earthquake data, open quake_db.json.
 
@@ -181,6 +181,8 @@ Example:
 ]
 
 ### Screenshot Gallery
+
+The following images show the key stages of the implementation and testing process.
 
 <div align="center">
   <p><strong>1. Package Installation</strong></p>
@@ -204,7 +206,9 @@ Example:
 
 ___________________________________________________________________________________________________________________________________________________________________________
 
-6. Output Summary
+---
+
+## 6. Output Summary
 Task	Status	Remarks
 FastAPI Installation	Successful	Dependencies installed
 TinyDB Configuration	Successful	Database created
@@ -216,7 +220,7 @@ Severity Classification	Successful	Minor, Moderate and Severe categories impleme
 
 _________________________________________________________________________________________________________________________________________________________________________________
 
-7. Results
+## 7. Results
 The REST API successfully stores earthquake information.
 Earthquake records are retrieved correctly through the GET endpoint.
 The system automatically classifies earthquakes based on magnitude.
@@ -224,7 +228,7 @@ All data is permanently stored in quake_db.json.
 Swagger UI enables easy API testing and documentation.
 
 ____________________________________________________________________________________________________________________________________________________________________________________
-8. Applications
+## 8. Applications
 Earthquake monitoring systems
 Disaster management and emergency response
 Geological research
@@ -234,7 +238,7 @@ Smart city disaster monitoring systems
 
 _________________________________________________________________________________________________________________________________________________________________________________
 
-9. Advantages
+## 9. Advantages
 Lightweight and easy to develop
 Fast API response time
 Simple JSON database
@@ -244,7 +248,7 @@ Scalable for future enhancements
 
 ______________________________________________________________________________________________________________________________________________________________________________
 
-10. Conclusion
+## 10. Conclusion
 This laboratory successfully demonstrated the development of an Earthquake 
 Magnitude Monitoring REST API using FastAPI and TinyDB. The application records 
 earthquake magnitude, location, timestamp, and severity while storing the information in a JSON database.
