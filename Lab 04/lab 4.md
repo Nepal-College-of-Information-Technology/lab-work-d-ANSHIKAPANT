@@ -121,6 +121,28 @@ IoT sensors operate by detecting physical changes and converting them into elect
 4. Classified sensors based on physical parameters and functions.
 5. Prepared summarized notes for each sensor type.
 
+### Screenshot Gallery
+
+<div align="center">
+  <p><strong>1. Sensor Overview</strong></p>
+  <img src="Screenshot%202026-07-07%20185526.png" alt="IoT sensor overview" width="700" />
+</div>
+
+<div align="center">
+  <p><strong>2. Sensor Module</strong></p>
+  <img src="Screenshot%202026-07-07%20185710.png" alt="Sensor module screenshot" width="700" />
+</div>
+
+<div align="center">
+  <p><strong>3. Experimental Setup</strong></p>
+  <img src="Screenshot%202026-07-07%20185744.png" alt="Experimental setup screenshot" width="700" />
+</div>
+
+<div align="center">
+  <p><strong>4. Observation Output</strong></p>
+  <img src="Screenshot%202026-07-07%20185817.png" alt="Observation output screenshot" width="700" />
+</div>
+
 ---
 
 ## 10. Output
