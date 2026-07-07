@@ -123,6 +123,8 @@ IoT sensors operate by detecting physical changes and converting them into elect
 
 ### Screenshot Gallery
 
+The uploaded image shows a broad overview of 15 different IoT sensor types used in modern applications.
+
 <div align="center">
   <p><strong>1. Sensor Overview</strong></p>
   <img src="Screenshot%202026-07-07%20185526.png" alt="IoT sensor overview" width="700" />
@@ -159,9 +161,11 @@ IoT sensors operate by detecting physical changes and converting them into elect
 </div>
 
 <div align="center">
-  <p><strong>8. Additional Screenshot</strong></p>
-  <img src="Screenshot%202026-07-07%20185841.png" alt="Additional screenshot" width="700" />
+  <p><strong>8. Fifteen Sensor Types Illustration</strong></p>
+  <img src="Screenshot%202026-07-07%20185841.png" alt="Fifteen sensor types illustration" width="700" />
 </div>
+
+
 
 ---
 
