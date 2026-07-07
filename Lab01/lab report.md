@@ -88,6 +88,9 @@ Open your browser and visit:
 ```
 http://<public-ip>
 ```
+# Output
+
+
 
 
 
@@ -96,7 +99,7 @@ http://<public-ip>
 
 ---
 
-# Output
+
 
 
 ![Web Page Output](Screenshot%202026-05-28%20161428.png)
