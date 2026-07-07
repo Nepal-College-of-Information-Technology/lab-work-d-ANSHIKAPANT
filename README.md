@@ -11,5 +11,5 @@
 | 3      |  Visualizing IoT Sensor Data with Interactive Dashboards              |2026/06/19| To Visualize IoT Sensor Data with Interactive Dashboards   |
 | 4      |Different Types of IoT Sensors                                         |2026/06/23| Different Types of IoT Sensors                             |
 | 5      | Integrating ESP32 Sensor Data with Cloud-Based REST API and           |2026/07/07| Cloud-Based Rest API and Visualization                     |
-         |   Dashboard Visualization                                             |
+            Dashboard Visualization                                             
                                                                                          
