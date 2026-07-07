@@ -203,5 +203,4 @@ Real‑time and historical sensor data were displayed interactively, underscorin
 ### Screenshot 2
 <img src="./Screenshot 2026-07-07 202005.png" alt="Lab 3 Screenshot 2" width="700" />
 
-### Screenshot 3
-<img src="./Screenshot 2026-07-07 201949.png" alt="Lab 3 Screenshot 3" width="700" />
+
