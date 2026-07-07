@@ -184,10 +184,6 @@ Example:
 
 The following images show the key stages of the implementation and testing process.
 
-<div align="center">
-  <p><strong>1. Package Installation</strong></p>
-  <img src="Screenshot%202026-07-07%20181757.png" alt="Package installation screenshot" width="700" />
-</div>
 
 <div align="center">
   <p><strong>2. VS Code Source Code</strong></p>
