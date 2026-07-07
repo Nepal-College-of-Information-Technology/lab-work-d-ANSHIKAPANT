@@ -203,6 +203,10 @@ Capture screenshots of:
 - Serial Monitor output showing sensor readings
 - API response printed on Serial Monitor or via `curl`
 - Dashboard graphs showing the uploaded data
+- GitHub repository or commit screenshot showing the lab submission
+
+![GitHub Screenshot](./Screenshot%202026-07-07%20210016.png)
+*GitHub screenshot showing the repository/lab work submission.*
 
 ---
 
