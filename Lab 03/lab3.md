@@ -177,21 +177,35 @@ Dashboard: http://<EC2-Public-IP>/dashboard
 
 API: http://<EC2-Public-IP>/weather
 
-Results
-REST API deployed successfully on AWS EC2
+## 7. Results
 
-Sensor readings stored and retrieved via TinyDB
+- **API Status:** FastAPI endpoints (`/` and `/weather`) respond correctly to GET and POST requests. The API accepted data and returned stored records.
+- **Data Persistence:** Sensor readings (timestamp, temperature, humidity) persist in `db.json` via TinyDB. Entries match the sample JSON shown in the screenshots.
+- **Live Monitoring:** The dashboard displays the latest temperature and humidity values and refreshes every 5 seconds to reflect new readings.
+- **Historical Charts:** Chart.js rendered a line chart of historical temperature values, enabling trend analysis and visualization of periodic changes.
+- **Deployment:** The dashboard and API were reachable from the EC2 public IP at `/dashboard` and `/weather` when tested.
 
-Dashboard shows live temperature and humidity values
+Sample data (from screenshot):
 
-Historical data plotted using Chart.js line chart
+```
+{
+    "timestamp": "2026-06-03 10:00:00",
+    "temperature": 24.2,
+    "humidity": 60
+},
+{
+    "timestamp": "2026-06-03 10:05:00",
+    "temperature": 24.8,
+    "humidity": 62
+}
+```
 
-Public access enabled through EC2 instance
+---
 
-Conclusion
-This lab demonstrated the development and deployment of an IoT dashboard on AWS EC2.
-FastAPI was used for backend services, while Chart.js provided visualization. 
-Real‑time and historical sensor data were displayed interactively, underscoring the importance of visualization in IoT monitoring and trend analysis.
+## 8. Conclusion
+
+This lab demonstrated a full-stack approach to visualizing IoT sensor data: a lightweight FastAPI backend for data ingestion, TinyDB for quick prototyping storage, and a Chart.js-powered frontend for real-time and historical visualization. The deployed dashboard makes monitoring simple and provides a foundation for future enhancements such as authentication, database scaling, additional sensor types, filtering, and alerting.
+
 
 ---
 
@@ -203,4 +217,4 @@ Real‑time and historical sensor data were displayed interactively, underscorin
 ### Screenshot 2
 <img src="./Screenshot 2026-07-07 202005.png" alt="Lab 3 Screenshot 2" width="700" />
 
-
+ 
