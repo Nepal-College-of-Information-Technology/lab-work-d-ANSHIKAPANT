@@ -93,13 +93,9 @@ Open the terminal and install the required Python packages.
 
 pip install fastapi uvicorn tinydb
 
-![Package installation screenshot](Screenshot%202026-07-07%20181757.png)
-
 Step 2: Create Project File
 
 Create a file named main.py and paste the above source code into it.
-
-![VS Code source code screenshot](Screenshot%202026-07-07%20181757.png)
 
 Step 3: Run the API Server
 
@@ -110,8 +106,6 @@ uvicorn main:app --reload
 The server starts at:
 
 http://127.0.0.1:8000
-
-![Terminal showing server running](Screenshot%202026-07-07%20181757.png)
 
 Step 4: Test the API
 Home Endpoint
@@ -169,8 +163,6 @@ http://127.0.0.1:8000/docs
 
 Swagger UI provides interactive API documentation where all endpoints can be tested.
 
-![Swagger UI screenshot](Screenshot%202026-07-07%20181757.png)
-
 Step 6: Verify Database
 
 After submitting earthquake data, open quake_db.json.
@@ -188,7 +180,19 @@ Example:
   }
 ]
 
-![quake_db.json screenshot](Screenshot%202026-07-07%20181757.png)
+### Screenshot Gallery
+
+- Package installation
+  ![Package installation screenshot](Screenshot%202026-07-07%20181757.png)
+
+- VS Code source code
+  ![VS Code source code screenshot](Screenshot%202026-07-07%20183447.png)
+
+- Server running
+  ![Terminal showing server running](Screenshot%202026-07-07%20183510.png)
+
+- Swagger UI and database output
+  ![Swagger UI and database screenshot](Screenshot%202026-07-07%20183517.png)
 
 ___________________________________________________________________________________________________________________________________________________________________________
 
