@@ -100,13 +100,13 @@ Hard resetting via RTS pin
 ```
 
 ## Screenshot
-If you want to include a screenshot in the report, place the image in an images folder and embed it as follows:
+The following screenshots show the ESP32 setup, upload process, and serial monitor output:
 
-```html
-<p align="center">
-  <img src="images/esp32_blink_output.png" width="900">
-</p>
-```
+![ESP32 board connected for upload](Screenshot%202026-07-07%20213439.png)
+
+![ESP32 upload progress](Screenshot%202026-07-07%20213832.png)
+
+![Serial monitor output](Screenshot%202026-07-07%20213845.png)
 
 ## Result
 The ESP32 blink program was successfully compiled and uploaded using the Arduino IDE. The built-in LED connected to GPIO 2 blinked continuously at a 500 ms interval, and the Serial Monitor displayed the expected ON/OFF status, confirming that the board was programmed correctly and communication was successful.
