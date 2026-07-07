@@ -65,17 +65,8 @@ sudo systemctl enable nginx
 sudo nano /var/www/html/index.html
 ```
 
-Paste:
 
-```html
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Cloud Web Server</title>
-</head>
-<body>
-    <h1>Welcome to Nginx on AWS EC2</h1>
-</body>
+
 # Output
 
 ![alt text](Screenshot%202026-07-07%20145301.png)
