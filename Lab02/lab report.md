@@ -180,23 +180,35 @@ Example:
   }
 ]
 
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________________
+
 ### Screenshot Gallery
 
 The following images show the key stages of the implementation and testing process.
 
 
 <div align="center">
-  <p><strong>2. VS Code Source Code</strong></p>
+  <p><strong>1. VS Code Source Code</strong></p>
   <img src="Screenshot%202026-07-07%20183447.png" alt="VS Code source code screenshot" width="700" />
 </div>
 
+
+
+
+
 <div align="center">
-  <p><strong>3. Server Running</strong></p>
+  <p><strong>2. Server Running</strong></p>
   <img src="Screenshot%202026-07-07%20183510.png" alt="Terminal showing server running" width="700" />
 </div>
 
+
+
+
+
+
 <div align="center">
-  <p><strong>4. Swagger UI and Database Output</strong></p>
+  <p><strong>3. Swagger UI and Database Output</strong></p>
   <img src="Screenshot%202026-07-07%20183517.png" alt="Swagger UI and database screenshot" width="700" />
 </div>
 
