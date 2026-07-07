@@ -93,13 +93,13 @@ Open the terminal and install the required Python packages.
 
 pip install fastapi uvicorn tinydb
 
-Screenshot: (Insert package installation screenshot)
+![Package installation screenshot](Screenshot%202026-07-07%20181757.png)
 
 Step 2: Create Project File
 
 Create a file named main.py and paste the above source code into it.
 
-Screenshot: (Insert VS Code source code screenshot)
+![VS Code source code screenshot](Screenshot%202026-07-07%20181757.png)
 
 Step 3: Run the API Server
 
@@ -111,7 +111,7 @@ The server starts at:
 
 http://127.0.0.1:8000
 
-Screenshot: (Insert terminal showing server running)
+![Terminal showing server running](Screenshot%202026-07-07%20181757.png)
 
 Step 4: Test the API
 Home Endpoint
@@ -169,7 +169,7 @@ http://127.0.0.1:8000/docs
 
 Swagger UI provides interactive API documentation where all endpoints can be tested.
 
-Screenshot: (Insert Swagger UI screenshot)
+![Swagger UI screenshot](Screenshot%202026-07-07%20181757.png)
 
 Step 6: Verify Database
 
@@ -188,7 +188,7 @@ Example:
   }
 ]
 
-Screenshot: (Insert quake_db.json screenshot)
+![quake_db.json screenshot](Screenshot%202026-07-07%20181757.png)
 
 ___________________________________________________________________________________________________________________________________________________________________________
 
