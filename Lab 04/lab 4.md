@@ -143,6 +143,21 @@ IoT sensors operate by detecting physical changes and converting them into elect
   <img src="Screenshot%202026-07-07%20185817.png" alt="Observation output screenshot" width="700" />
 </div>
 
+<div align="center">
+  <p><strong>5. Additional Observation</strong></p>
+  <img src="Screenshot%202026-07-07%20185841.png" alt="Additional observation screenshot" width="700" />
+</div>
+
+<div align="center">
+  <p><strong>6. Sensor Analysis</strong></p>
+  <img src="Screenshot%202026-07-07%20185947.png" alt="Sensor analysis screenshot" width="700" />
+</div>
+
+<div align="center">
+  <p><strong>7. Final Result</strong></p>
+  <img src="Screenshot%202026-07-07%20190031.png" alt="Final result screenshot" width="700" />
+</div>
+
 ---
 
 ## 10. Output
