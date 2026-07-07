@@ -177,34 +177,6 @@ Dashboard: http://<EC2-Public-IP>/dashboard
 
 API: http://<EC2-Public-IP>/weather
 
-## 7. Results
-
-- **API Status:** FastAPI endpoints (`/` and `/weather`) respond correctly to GET and POST requests. The API accepted data and returned stored records.
-- **Data Persistence:** Sensor readings (timestamp, temperature, humidity) persist in `db.json` via TinyDB. Entries match the sample JSON shown in the screenshots.
-- **Live Monitoring:** The dashboard displays the latest temperature and humidity values and refreshes every 5 seconds to reflect new readings.
-- **Historical Charts:** Chart.js rendered a line chart of historical temperature values, enabling trend analysis and visualization of periodic changes.
-- **Deployment:** The dashboard and API were reachable from the EC2 public IP at `/dashboard` and `/weather` when tested.
-
-Sample data (from screenshot):
-
-```
-{
-    "timestamp": "2026-06-03 10:00:00",
-    "temperature": 24.2,
-    "humidity": 60
-},
-{
-    "timestamp": "2026-06-03 10:05:00",
-    "temperature": 24.8,
-    "humidity": 62
-}
-```
-
----
-
-## 8. Conclusion
-
-This lab demonstrated a full-stack approach to visualizing IoT sensor data: a lightweight FastAPI backend for data ingestion, TinyDB for quick prototyping storage, and a Chart.js-powered frontend for real-time and historical visualization. The deployed dashboard makes monitoring simple and provides a foundation for future enhancements such as authentication, database scaling, additional sensor types, filtering, and alerting.
 
 
 ---
@@ -217,4 +189,25 @@ This lab demonstrated a full-stack approach to visualizing IoT sensor data: a li
 ### Screenshot 2
 <img src="./Screenshot 2026-07-07 202005.png" alt="Lab 3 Screenshot 2" width="700" />
 
+
+7. Results
+The FastAPI backend was successfully deployed on the AWS EC2 instance and responded correctly to both GET and POST requests.
+Sensor data, including temperature, humidity, and timestamp, was successfully stored in TinyDB (db.json).
+The dashboard displayed the latest sensor readings using interactive information cards.
+A Chart.js line graph visualized historical temperature data, making trends and fluctuations easy to observe.
+The dashboard automatically refreshed every 5 seconds, providing near real-time monitoring without requiring manual page reloads.
+The application was successfully accessed through the EC2 public IP using the following endpoints:
+Dashboard: http://<EC2-Public-IP>/dashboard
+API: http://<EC2-Public-IP>/weather
+The implementation demonstrated successful integration of the frontend dashboard, backend API, and local database for IoT sensor visualization.
+
+
+
+8. Conclusion
+This lab successfully demonstrated the development of an interactive IoT sensor dashboard
+using FastAPI, TinyDB, and Chart.js. The backend efficiently stored and served sensor readings
+ through REST API endpoints, while the frontend presented both real-time and historical data in an intuitive graphical interface.
+Deploying the application on an AWS EC2 instance made it accessible over the internet, simulating a practical cloud-based IoT monitoring
+system. Overall, the lab highlighted how data visualization improves the understanding of IoT sensor data and provided a
+solid foundation for future enhancements such as authentication, multiple sensor support, data filtering, alerts, and integration with cloud databases.
  
