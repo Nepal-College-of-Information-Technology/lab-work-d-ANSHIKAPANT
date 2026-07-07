@@ -76,34 +76,20 @@ Paste:
 <body>
     <h1>Welcome to Nginx on AWS EC2</h1>
 </body>
-</html>
-```
-
----
-
-## Step 6: Access the Web Page
-
-Open your browser and visit:
-
-```
-http://<public-ip>
-```
 # Output
 
-
-
-
-
-
+![alt text](<Screenshot 2026-07-07 145301.png>)
 **Figure 1:** Successfully hosted webpage running on the AWS EC2 instance using the Nginx web server.
 
 ---
 
 
 
+---
+>>>>>>> 5644b99 (Save workspace changes)
 
 ![Web Page Output](Screenshot%202026-05-28%20161428.png)
-**Figure 1:** Successfully hosted webpage running on the AWS EC2 instance using the Nginx web server.
+**Figure 2:** 
 
 - ✅ EC2 instance launched successfully.
 - ✅ Nginx installed successfully.
