@@ -82,7 +82,7 @@ sudo nano /var/www/html/index.html
 
 ### Output
 
-![Figure 1: EC2 output](lab1-ec2-output.png)
+![Figure 1: EC2 output](Screenshot%202026-07-07%20145301.png)
 **Figure 1:** Successfully hosted webpage running on the AWS EC2 instance using the Nginx web server.
 
 ---
@@ -91,7 +91,7 @@ sudo nano /var/www/html/index.html
 
 ---
 
-![Figure 2: Web page output](lab1-webpage-output.png)
+![Figure 2: Web page output](Screenshot%202026-05-28%20161428.png)
 **Figure 2:** 
 
 - ✅ EC2 instance launched successfully.
